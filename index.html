@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sundria Self Drive Car Rentals Pilani</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Hind:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f4f1;--sf:#fff;--tx:#17130f;--mu:#6a625a;--ln:#e3ddd6;--rd:#d71920;--or:#ff7a00;--yl:#ffc400;--gr:#1a9b52;--hd:#0c0c0c;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c0c0c;--sf:#191817;--tx:#f4efe9;--mu:#a39a90;--ln:#2e2a26}}
+:root[data-theme="dark"]{--bg:#0c0c0c;--sf:#191817;--tx:#f4efe9;--mu:#a39a90;--ln:#2e2a26}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.55 Hind,system-ui,sans-serif}
+h1,h2,h3{font-family:Oswald,Hind,sans-serif;line-height:1.15;margin:0 0 .5em;font-weight:700}
+h1{font-size:clamp(2rem,8vw,3.6rem)}h2{font-size:1.7rem}h3{font-size:1.15rem}
+a{color:inherit}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--hd);color:#fff;border-bottom:3px solid var(--rd)}
+.bar{display:flex;align-items:center;gap:8px;padding:8px 14px;max-width:1100px;margin:auto}
+.logo{font:700 1.05rem Oswald,sans-serif;text-decoration:none;flex:1;letter-spacing:.5px}.logo b{color:var(--yl)}
+select,button,input,textarea{font:inherit}
+.ctl{background:#262626;color:#fff;border:1px solid #444;border-radius:8px;padding:6px 8px;font-size:.85rem}
+nav{display:flex;gap:4px;overflow-x:auto;padding:0 10px 8px;max-width:1100px;margin:auto;scrollbar-width:none}
+nav a{white-space:nowrap;color:#ddd;text-decoration:none;padding:5px 11px;border-radius:99px;font-size:.9rem}
+nav a.on{background:var(--rd);color:#fff}
+main{max-width:1100px;margin:auto;padding:16px 14px 90px}
+.hero{background:var(--hd);color:#fff;border-radius:18px;padding:26px 20px;position:relative;overflow:hidden;border-bottom:6px solid var(--or)}
+.hero p{color:#d8d0c7;max-width:34em}
+.hero:after{content:"";position:absolute;right:-60px;top:-60px;width:220px;height:220px;border-radius:50%;border:26px solid var(--rd);opacity:.35}
+.hero>*{position:relative;z-index:1}
+.btn{display:inline-block;border:0;border-radius:10px;padding:11px 18px;font-weight:600;text-decoration:none;cursor:pointer;background:var(--rd);color:#fff;margin:4px 6px 4px 0}
+.btn.g{background:var(--gr)}.btn.o{background:transparent;border:2px solid currentColor}.btn.y{background:var(--yl);color:#111}
+.grid{display:grid;gap:14px;grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.card{background:var(--sf);border:1px solid var(--ln);border-radius:14px;overflow:hidden}
+.pad{padding:14px}
+.pic{height:140px;display:flex;align-items:center;justify-content:center;font-size:3rem;position:relative}
+.tag{position:absolute;left:10px;bottom:8px;font-size:.75rem;background:#000a;color:#fff;border-radius:6px;padding:1px 8px}
+.rates{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin:10px 0;text-align:center}
+.rates div{background:var(--bg);border-radius:8px;padding:6px 2px;font-size:.78rem;color:var(--mu)}
+.rates b{display:block;font:700 1.05rem Oswald,sans-serif;color:var(--tx)}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}
+.chip{border:1px solid var(--ln);background:var(--sf);color:var(--tx);border-radius:99px;padding:5px 14px;cursor:pointer}
+.chip.on{background:var(--yl);color:#111;border-color:var(--yl)}
+.note{background:var(--sf);border-left:5px solid var(--or);padding:10px 14px;border-radius:8px;margin:14px 0;color:var(--mu)}
+.st{display:inline-block;font-size:.78rem;border-radius:6px;padding:1px 8px;background:var(--yl);color:#111;margin-right:6px}
+label{display:block;font-weight:600;margin:12px 0 4px}
+input,select.f,textarea{width:100%;padding:10px;border:1px solid var(--ln);border-radius:10px;background:var(--sf);color:var(--tx)}
+.cols{display:grid;gap:0 12px;grid-template-columns:1fr 1fr}
+table{border-collapse:collapse;width:100%;background:var(--sf);border-radius:10px;overflow:hidden}
+td,th{padding:9px 10px;border-bottom:1px solid var(--ln);text-align:left}
+.wrap{overflow-x:auto}
+footer{background:var(--hd);color:#ccc;padding:22px 14px 90px;border-top:3px solid var(--rd)}
+footer div{max-width:1100px;margin:auto}footer a{margin-right:12px;color:#ddd}
+.wa{position:fixed;right:14px;bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:30;background:var(--gr);color:#fff;border-radius:99px;padding:12px 18px;font-weight:600;text-decoration:none;box-shadow:0 4px 14px #0006}
+ul.l{padding-left:1.2em}.ul li{margin:4px 0}
+@media(max-width:520px){.cols{grid-template-columns:1fr}}
+:root{--gd:#c9a24a}
+body{font-size:17px;line-height:1.7}
+main p,main li{max-width:46em}
+.hero p{font-size:1.08rem;line-height:1.7}
+.logo small{display:block;font:500 .72rem Hind,sans-serif;color:#bdb5aa;letter-spacing:.8px;margin-top:2px}
+.from{margin:0;color:var(--mu)}
+.from b{font:700 1.55rem "Playfair Display",Georgia,serif;color:var(--tx)}
+.from small{font-size:.85rem}
+.rates div{font-size:.74rem;opacity:.9}
+.hrl{margin:2px 0 8px;color:var(--mu);font-size:.9rem}
+.from b{color:var(--rd)}
+@media(min-width:900px){nav{justify-content:center}.bar{padding:12px 20px}.logo{font-size:1.3rem}}
+.rates b{font-size:.92rem!important;font-weight:600}
+h1,h2,h3,.logo,.rates b{font-family:"Playfair Display",Georgia,Hind,serif;letter-spacing:.2px}
+h2{border-bottom:1px solid var(--ln);padding-bottom:8px;margin-top:1.4em}
+header{border-bottom:1px solid var(--gd);box-shadow:0 2px 0 var(--rd)}
+.logo b{background:linear-gradient(90deg,#f3d27a,#c9a24a);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero{background:radial-gradient(circle at 85% 0,#3d0c10 0,#0c0c0c 58%);border:1px solid #c9a24a66;border-bottom:4px solid var(--gd);padding:34px 22px}
+.hero:after{border-color:#c9a24a;opacity:.16}
+.vip{display:inline-block;border:1px solid var(--gd);color:#f3d27a;border-radius:99px;padding:2px 16px;font-size:.85rem;letter-spacing:1.5px;margin-bottom:14px}
+.btn.y{background:linear-gradient(135deg,#f3d27a,#c9a24a);color:#1a1405}
+.card{border-color:color-mix(in srgb,var(--gd) 35%,var(--ln))}
+.vipt{position:absolute;right:10px;top:8px;background:linear-gradient(135deg,#f3d27a,#c9a24a);color:#1a1405;font:700 .72rem Hind,sans-serif;border-radius:6px;padding:1px 10px;letter-spacing:1.5px}
+.strip{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:10px;margin:18px 0}
+.strip div{padding:12px 14px;border-left:3px solid var(--gd);background:var(--sf);border-radius:0 10px 10px 0;font-weight:500}
+nav a span{display:none}.side{display:none}
+@media(min-width:99999px){
+header{position:fixed;top:0;left:0;bottom:0;width:264px;display:flex;flex-direction:column;border-bottom:0;border-right:1px solid var(--gd);box-shadow:none;overflow-y:auto}
+.bar{flex-wrap:wrap;padding:26px 18px 12px}.logo{flex:1 0 100%;font-size:1.4rem;line-height:1.2;margin-bottom:10px}
+nav{flex-direction:column;overflow:visible;padding:8px 12px;gap:2px}
+nav a{border-radius:10px;padding:10px 14px;font-size:1rem;border-left:3px solid transparent}
+nav a span{display:inline-block;width:1.6em}
+nav a.on{background:#ffffff14;border-left-color:var(--gd);color:#f3d27a}
+.side{display:block;margin:auto 14px 18px;padding:14px;border:1px solid var(--gd);border-radius:12px;font-size:.9rem;color:#ddd}
+.side b{color:#f3d27a;font-family:"Playfair Display",Georgia,serif;font-size:1.05rem}
+.side a{display:block;color:#f3d27a;text-decoration:none;font-weight:600;margin-top:4px}
+main{margin:0 0 0 264px;max-width:none;padding:30px 40px 70px}
+footer{margin-left:264px}
+}
+</style>
+</head>
+<body>
+<header>
+ <div class="bar">
+  <a class="logo" href="#home">Sundria <b>Car4You</b><small>Self Drive Car Rentals · Pilani</small></a>
+  <select class="ctl" id="lang" aria-label="Language"><option value="en">English</option><option value="hi">हिन्दी</option><option value="hn">Hinglish</option></select>
+  <button class="ctl" id="theme" aria-label="Theme">◐</button>
+ </div>
+ <nav id="nav"></nav>
+ <div class="side"><b>VIP Booking Desk</b><br>Direct owner support<a href="tel:+919351808902">+91 9351808902</a><a href="tel:+919649961808">+91 9649961808</a></div>
+</header>
+<main id="app"></main>
+<footer><div id="foot"></div></footer>
+<a class="wa" id="wafab" target="_blank" rel="noopener">WhatsApp</a>
+
+<script type="application/json" id="st">{}</script>
+<script>
+var WA="919351808902";
+var D={
+en:{home:"Home",cars:"All Cars",book:"Book",taxi:"Taxi",wed:"Wedding Cars",tours:"Tours & Travel",offers:"Offers",reviews:"Reviews",contact:"Contact",privacy:"Privacy Policy",terms:"Terms",cancel:"Cancellation Policy",
+h1:"Drive in style. Premium self-drive cars in Pilani.",hp:"Choose a car, pick a package and send a booking request. We confirm availability ourselves before anything is fixed.",
+viewcars:"View cars",reqbook:"Request booking",chat:"Chat on WhatsApp",pk6:"6 hrs · 120 km",pk12:"12 hrs · 240 km",pk24:"24 hrs · 500 km",extra:"Extra hour",nop:"Not offered",
+all:"All",petrol:"Petrol",cng:"CNG",diesel:"Diesel",details:"Details",from:"From",
+tariff:"Packages",tariffp:"Every rental has a km limit. Extra hours are charged at the car's hourly rate.",
+notice:"Prices are starting rates. Availability is not guaranteed until the owner approves your request.",
+steps:"How booking works",s1:"Send a request with your dates and car.",s2:"We check availability and approve it.",s3:"For 24 hours or longer, we then ask for a ₹1,000 advance, which is part of your total rent.",s4:"Bring your driving licence and ID at pickup.",
+bt:"Booking request",name:"Your name",phone:"Phone number",car:"Car",pkg:"Package",date:"Pickup date",time:"Pickup time",pick:"Pickup / drop place",note:"Notes (optional)",bits:"I am a BITS Pilani student (ID needed at pickup)",send:"Send on WhatsApp",
+est:"Estimated base rent",estn:"Estimate only. Discounts, fuel, tolls and extra hours are confirmed by the owner.",status:"Status: Enquiry only. Not confirmed. Payment: Not paid.",min:"Minimum booking is 6 hours.",
+taxit:"Taxi service",taxip:"Local and outstation taxi trips from Pilani. Tell us the route and date on WhatsApp for a quote.",
+wedt:"Wedding cars",wedp:"Cars for baraat, guest pickup and family travel. Share your date, number of cars and timings to get a quote.",
+tourt:"Tours & travel",tourp:"Trips to Jaipur, Delhi, Jhunjhunu, Salasar, Khatu Shyam and more. Ask for a package or take a self-drive car.",
+offt:"Offers",offp:"These offers are set up by the owner and confirmed when your booking is approved.",
+o1:"BITS Pilani student discount",o1d:"Available for eligible students. The exact amount is set by the owner.",o2:"10% off long rentals",o2d:"For eligible bookings of 24 hours or longer.",o3:"Loyalty points",o3d:"1 point per ₹100 spent on completed rentals. 100 points = ₹100 off a future rental.",o4:"Referral rewards (proposed)",o4d:"100 points each after your friend's first completed paid booking.",
+revt:"Reviews",revp:"We only show reviews from verified completed bookings. There are no reviews yet.",
+cont:"Contact us",addr:"Shiv Colony, Pilani, Rajasthan 333031",call:"Call",email:"Email",map:"Open in Google Maps",
+admin:"Staff login",admint:"Staff login",admp:"The admin panel (owner and employee roles, OTP login, bookings, prices, payments) needs the secure backend to be set up first. It is not active in this page.",
+pol:"This is a draft for the owner to review before use.",
+privb:"We collect only what is needed to handle your booking: name, phone, booking details and, when required, driving documents. We do not sell your data.",
+termb:"Minimum rental is 6 hours. A valid driving licence and ID are required. Fuel, tolls, parking and fines are paid by the customer unless agreed. Damage during rental is the customer's responsibility. Km limits apply per package.",
+canb:"Bookings of 24 hours or longer need a ₹1,000 advance after approval. The advance is part of the total rent. Refund and cancellation timings will be set by the owner.",
+back:"Back",open:"Open",sel:"Select",nf:"Page not found",setup:"Set up needed",ft:"SUNDRIA CAR 4 YOU RENTAL SERVICE"},
+hi:{home:"होम",cars:"सभी गाड़ियाँ",book:"बुकिंग",taxi:"टैक्सी",wed:"शादी की गाड़ियाँ",tours:"टूर और यात्रा",offers:"ऑफ़र",reviews:"रिव्यू",contact:"संपर्क",privacy:"गोपनीयता नीति",terms:"नियम व शर्तें",cancel:"कैंसिलेशन नीति",
+h1:"शान से चलाएँ। पिलानी में प्रीमियम सेल्फ-ड्राइव कारें।",hp:"गाड़ी चुनें, पैकेज चुनें और बुकिंग रिक्वेस्ट भेजें। कुछ भी पक्का करने से पहले हम खुद उपलब्धता जाँचते हैं।",
+viewcars:"गाड़ियाँ देखें",reqbook:"बुकिंग रिक्वेस्ट",chat:"व्हाट्सऐप पर बात करें",pk6:"6 घंटे · 120 किमी",pk12:"12 घंटे · 240 किमी",pk24:"24 घंटे · 500 किमी",extra:"अतिरिक्त घंटा",nop:"उपलब्ध नहीं",
+all:"सभी",petrol:"पेट्रोल",cng:"सीएनजी",diesel:"डीज़ल",details:"विवरण",from:"शुरुआत",
+tariff:"पैकेज",tariffp:"हर किराये में किमी की सीमा है। अतिरिक्त घंटे गाड़ी की प्रति घंटा दर से लगेंगे।",
+notice:"कीमतें शुरुआती दरें हैं। मालिक की मंज़ूरी तक उपलब्धता की गारंटी नहीं है।",
+steps:"बुकिंग कैसे होती है",s1:"तारीख और गाड़ी के साथ रिक्वेस्ट भेजें।",s2:"हम उपलब्धता जाँचकर मंज़ूरी देते हैं।",s3:"24 घंटे या ज़्यादा के लिए ₹1,000 एडवांस माँगा जाता है, जो कुल किराये का हिस्सा है।",s4:"पिकअप पर ड्राइविंग लाइसेंस और ID लाएँ।",
+bt:"बुकिंग रिक्वेस्ट",name:"आपका नाम",phone:"फ़ोन नंबर",car:"गाड़ी",pkg:"पैकेज",date:"पिकअप तारीख",time:"पिकअप समय",pick:"पिकअप / ड्रॉप स्थान",note:"टिप्पणी (वैकल्पिक)",bits:"मैं BITS पिलानी का छात्र हूँ (पिकअप पर ID चाहिए)",send:"व्हाट्सऐप पर भेजें",
+est:"अनुमानित मूल किराया",estn:"केवल अनुमान। छूट, ईंधन, टोल और अतिरिक्त घंटे मालिक तय करेंगे।",status:"स्थिति: केवल पूछताछ। पक्की नहीं। भुगतान: नहीं हुआ।",min:"न्यूनतम बुकिंग 6 घंटे की है।",
+taxit:"टैक्सी सेवा",taxip:"पिलानी से लोकल और आउटस्टेशन टैक्सी। रूट और तारीख व्हाट्सऐप पर बताएँ।",
+wedt:"शादी की गाड़ियाँ",wedp:"बारात, मेहमानों के पिकअप और परिवार की यात्रा के लिए गाड़ियाँ। तारीख, गाड़ियों की संख्या और समय बताएँ।",
+tourt:"टूर और यात्रा",tourp:"जयपुर, दिल्ली, झुंझुनूं, सालासर, खाटू श्याम आदि की यात्राएँ। पैकेज पूछें या सेल्फ-ड्राइव लें।",
+offt:"ऑफ़र",offp:"ये ऑफ़र मालिक तय करते हैं और बुकिंग मंज़ूर होने पर पक्के होते हैं।",
+o1:"BITS पिलानी छात्र छूट",o1d:"पात्र छात्रों के लिए। राशि मालिक तय करते हैं।",o2:"लंबे किराये पर 10% छूट",o2d:"24 घंटे या ज़्यादा की पात्र बुकिंग पर।",o3:"लॉयल्टी पॉइंट",o3d:"पूरे हुए किराये पर हर ₹100 पर 1 पॉइंट। 100 पॉइंट = अगले किराये पर ₹100 छूट।",o4:"रेफ़रल इनाम (प्रस्तावित)",o4d:"दोस्त की पहली पूरी भुगतान वाली बुकिंग के बाद दोनों को 100 पॉइंट।",
+revt:"रिव्यू",revp:"हम केवल सत्यापित पूरी हुई बुकिंग के रिव्यू दिखाते हैं। अभी कोई रिव्यू नहीं है।",
+cont:"संपर्क करें",addr:"शिव कॉलोनी, पिलानी, राजस्थान 333031",call:"कॉल करें",email:"ईमेल",map:"गूगल मैप्स में खोलें",
+admin:"स्टाफ लॉगिन",admint:"स्टाफ लॉगिन",admp:"एडमिन पैनल (मालिक/कर्मचारी भूमिकाएँ, OTP लॉगिन, बुकिंग, कीमतें, भुगतान) के लिए पहले सुरक्षित बैकएंड सेट करना होगा। यह इस पेज में चालू नहीं है।",
+pol:"यह मालिक की समीक्षा के लिए ड्राफ्ट है।",
+privb:"हम केवल बुकिंग के लिए ज़रूरी जानकारी लेते हैं: नाम, फ़ोन, बुकिंग विवरण और ज़रूरत पड़ने पर ड्राइविंग दस्तावेज़। हम आपका डेटा बेचते नहीं।",
+termb:"न्यूनतम किराया 6 घंटे। वैध ड्राइविंग लाइसेंस और ID ज़रूरी। ईंधन, टोल, पार्किंग और चालान ग्राहक देगा जब तक तय न हो। किराये में हुआ नुकसान ग्राहक की ज़िम्मेदारी है। हर पैकेज में किमी सीमा लागू है।",
+canb:"24 घंटे या ज़्यादा की बुकिंग पर मंज़ूरी के बाद ₹1,000 एडवांस लगेगा, जो कुल किराये का हिस्सा है। रिफ़ंड और कैंसिलेशन समय मालिक तय करेंगे।",
+back:"वापस",open:"खोलें",sel:"चुनें",nf:"पेज नहीं मिला",setup:"सेटअप ज़रूरी",ft:"सुंदरिया कार 4 यू रेंटल सर्विस"},
+hn:{home:"Home",cars:"Saari Gaadiyan",book:"Booking",taxi:"Taxi",wed:"Wedding Cars",tours:"Tour & Travel",offers:"Offers",reviews:"Reviews",contact:"Contact",privacy:"Privacy Policy",terms:"Terms",cancel:"Cancellation Policy",
+h1:"Shaan se chalao. Pilani mein premium self-drive cars.",hp:"Gaadi chuno, package chuno aur booking request bhejo. Kuch bhi pakka karne se pehle hum khud availability check karte hain.",
+viewcars:"Gaadiyan dekho",reqbook:"Booking request",chat:"WhatsApp par baat karo",pk6:"6 ghante · 120 km",pk12:"12 ghante · 240 km",pk24:"24 ghante · 500 km",extra:"Extra ghanta",nop:"Available nahi",
+all:"Sab",petrol:"Petrol",cng:"CNG",diesel:"Diesel",details:"Details",from:"Starting",
+tariff:"Packages",tariffp:"Har rental mein km limit hai. Extra ghante gaadi ke hourly rate se lagenge.",
+notice:"Prices starting rates hain. Owner ki approval tak availability ki guarantee nahi hai.",
+steps:"Booking kaise hoti hai",s1:"Date aur gaadi ke saath request bhejo.",s2:"Hum availability check karke approve karte hain.",s3:"24 ghante ya zyada ke liye ₹1,000 advance maangte hain, jo total rent ka hissa hai.",s4:"Pickup par driving licence aur ID laao.",
+bt:"Booking request",name:"Aapka naam",phone:"Phone number",car:"Gaadi",pkg:"Package",date:"Pickup date",time:"Pickup time",pick:"Pickup / drop jagah",note:"Notes (optional)",bits:"Main BITS Pilani student hoon (pickup par ID chahiye)",send:"WhatsApp par bhejo",
+est:"Anumaanit base rent",estn:"Sirf estimate. Discount, fuel, toll aur extra ghante owner confirm karega.",status:"Status: Sirf enquiry. Confirm nahi. Payment: Nahi hui.",min:"Minimum booking 6 ghante ki hai.",
+taxit:"Taxi service",taxip:"Pilani se local aur outstation taxi. Route aur date WhatsApp par batao.",
+wedt:"Wedding cars",wedp:"Baraat, guest pickup aur family travel ke liye gaadiyan. Date, gaadiyon ki sankhya aur timing batao.",
+tourt:"Tour & travel",tourp:"Jaipur, Delhi, Jhunjhunu, Salasar, Khatu Shyam aur aur bhi trips. Package puchho ya self-drive lo.",
+offt:"Offers",offp:"Ye offers owner set karta hai aur booking approve hone par confirm hote hain.",
+o1:"BITS Pilani student discount",o1d:"Eligible students ke liye. Amount owner tay karta hai.",o2:"Lambe rental par 10% off",o2d:"24 ghante ya zyada ki eligible booking par.",o3:"Loyalty points",o3d:"Complete rental par har ₹100 par 1 point. 100 points = agle rental par ₹100 off.",o4:"Referral reward (proposed)",o4d:"Dost ki pehli complete paid booking ke baad dono ko 100 points.",
+revt:"Reviews",revp:"Hum sirf verified completed bookings ke reviews dikhate hain. Abhi koi review nahi hai.",
+cont:"Contact karo",addr:"Shiv Colony, Pilani, Rajasthan 333031",call:"Call karo",email:"Email",map:"Google Maps mein kholo",
+admin:"Staff login",admint:"Staff login",admp:"Admin panel (owner/employee roles, OTP login, bookings, prices, payments) ke liye pehle secure backend set karna hoga. Ye is page mein active nahi hai.",
+pol:"Ye owner ke review ke liye draft hai.",
+privb:"Hum sirf booking ke liye zaroori info lete hain: naam, phone, booking details aur zarurat par driving documents. Hum aapka data bechte nahi.",
+termb:"Minimum rental 6 ghante. Valid driving licence aur ID zaroori. Fuel, toll, parking aur challan customer dega jab tak tay na ho. Rental mein hua damage customer ki zimmedari hai. Har package mein km limit lagu hai.",
+canb:"24 ghante ya zyada ki booking par approval ke baad ₹1,000 advance lagega, jo total rent ka hissa hai. Refund aur cancellation timing owner tay karega.",
+back:"Wapas",open:"Kholo",sel:"Chuno",nf:"Page nahi mila",setup:"Setup chahiye",ft:"SUNDRIA CAR 4 YOU RENTAL SERVICE"}};
+/* name, colour, fuel, type, p6,p12,p24, extra hr, swatch  (editable in admin once backend is set up) */
+var C0=[["Nexa Ignis","White","petrol","Hatchback",800,1500,2400,100,"#e9e6e1"],["Swift","Red","petrol","Hatchback",1000,1800,3000,150,"#c8202b"],["Swift Dzire","White","petrol","Sedan",1000,1800,3000,150,"#e9e6e1"],["Swift","Black","petrol","Hatchback",1200,2000,3200,160,"#222"],["Swift","White","cng","Hatchback",1200,2000,3500,160,"#e9e6e1"],["Aura","White","cng","Sedan",1200,2000,3500,180,"#e9e6e1"],["Fronx","White","cng","Crossover",1500,2500,4000,200,"#e9e6e1"],["Fronx","Black","cng","Crossover",1500,2500,4000,200,"#222"],["Taisor","White","cng","Crossover",1500,2500,4000,200,"#e9e6e1"],["Brezza","White","cng","SUV",1500,2500,4000,200,"#e9e6e1"],["Ertiga","White","cng","MPV",1800,3000,5000,220,"#e9e6e1"],["Rumion","White","cng","MPV",1800,3000,5000,220,"#e9e6e1"],["Innova","White","cng","MPV",1800,3000,5000,220,"#e9e6e1"],["Thar","Black","diesel","SUV",2200,3500,6000,250,"#222"],["Scorpio","Black","diesel","SUV",2500,3500,6000,250,"#222"],["Scorpio N 4x4","","diesel","SUV",0,4500,8000,350,"#444"]];
+var S={cars:null,offers:[],qr:"",shop:"",logo:"",gal:["","","",""]};try{S=Object.assign(S,JSON.parse(document.getElementById("st").textContent))}catch(e){}
+var C=S.cars||C0.map(function(c){return c.concat(["",1])});
+var L="en",flt="all",sel={car:0,pkg:2};
+try{}catch(e){}
+function t(k){return (D[L]&&D[L][k])||D.en[k]||k}
+function rs(n){return "₹"+n.toLocaleString("en-IN")}
+function nm(c){return c[0]+(c[1]?" "+c[1]:"")+" "+c[2].toUpperCase().replace("PETROL","Petrol").replace("DIESEL","Diesel")}
+function wa(m){return "https://wa.me/"+WA+"?text="+encodeURIComponent(m)}
+function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function on(i){return C[i]&&C[i][10]!=0}
+function pic(c){return c[9]?'<img src="/_blob/'+c[9]+'" alt="" style="width:100%;height:100%;object-fit:cover">':"🚗"}
+function shop(){return S.shop?'<img src="/_blob/'+S.shop+'" alt="Sundria Car 4 You shop, Pilani" style="width:100%;border-radius:14px;margin:16px 0;max-height:340px;object-fit:cover">':""}
+var Q={en:["Pay by UPI QR","Pay only after the owner approves your booking and asks for the advance. Check the receiver name before paying. Send the payment screenshot on WhatsApp. Payment is marked paid only after the owner verifies it."],hi:["UPI QR से भुगतान","भुगतान केवल तब करें जब मालिक बुकिंग मंज़ूर करके एडवांस माँगे। भुगतान से पहले प्राप्तकर्ता का नाम जाँचें। स्क्रीनशॉट व्हाट्सऐप पर भेजें। मालिक के सत्यापन के बाद ही भुगतान 'हो गया' माना जाएगा।"],hn:["UPI QR se payment","Payment tabhi karo jab owner booking approve karke advance maange. Pay karne se pehle receiver ka naam check karo. Screenshot WhatsApp par bhejo. Owner verify kare tabhi payment paid maana jayega."]};
+function qrc(){return S.qr?'<div class="card pad" style="margin:14px 0"><h3>'+Q[L][0]+'</h3><img src="/_blob/'+S.qr+'" alt="UPI QR" style="max-width:240px;width:100%;background:#fff;padding:8px;border-radius:10px"><p class="note">'+Q[L][1]+'</p></div>':""}
+var IC={home:"🏠",cars:"🚘",book:"📅",taxi:"🚕",wed:"💍",tours:"🧭",offers:"🏷️",reviews:"⭐",contact:"📞"};
+var ST={en:["Clean & well-maintained cars","Affordable pricing","Easy booking on WhatsApp","24x7 support"],hi:["साफ़-सुथरी और अच्छी तरह मेंटेन गाड़ियाँ","किफ़ायती दाम","व्हाट्सऐप पर आसान बुकिंग","24x7 सहायता"],hn:["Saaf-suthri aur well-maintained gaadiyan","Affordable pricing","WhatsApp par easy booking","24x7 support"]};
+function strip(){return '<div class="strip">'+ST[L].map(function(x){return '<div>'+x+'</div>'}).join("")+'</div>'}
+var GC={en:["Office exterior","Office interior","Reception counter","Our cars"],hi:["ऑफ़िस बाहर से","ऑफ़िस अंदर से","रिसेप्शन काउंटर","हमारी गाड़ियाँ"],hn:["Office bahar se","Office andar se","Reception counter","Hamari gaadiyan"]};
+var GT={en:"Our office",hi:"हमारा ऑफ़िस",hn:"Hamara office"};
+function gallery(){var h="";(S.gal||[]).forEach(function(id,i){if(id)h+='<figure style="margin:0"><img src="/_blob/'+id+'" alt="'+GC.en[i]+'" loading="lazy" style="width:100%;height:190px;object-fit:cover;border-radius:12px;border:1px solid var(--gd)"><figcaption style="color:var(--mu);font-size:.9rem;margin-top:4px">'+GC[L][i]+'</figcaption></figure>'});return h?'<h2>'+GT[L]+'</h2><div class="grid">'+h+'</div>':""}
+var HRL={en:"per hour (24-hr package)",hi:"प्रति घंटा (24 घंटे के पैकेज से)",hn:"per ghanta (24 ghante package se)"},MIN={en:"min. booking 6 hrs",hi:"न्यूनतम बुकिंग 6 घंटे",hn:"minimum booking 6 ghante"},HN={en:"The hourly rate is an approximate figure from the package price. Minimum booking is 6 hours.",hi:"प्रति घंटा दर पैकेज की कीमत से निकाला गया अनुमान है। न्यूनतम बुकिंग 6 घंटे की है।",hn:"Per ghanta rate package price se nikala gaya anumaan hai. Minimum booking 6 ghante ki hai."};
+function hr(c){return Math.round(c[6]/24)}
+function best(){var m=1e9;C.forEach(function(c,i){if(on(i)&&hr(c)<m)m=hr(c)});return m}
+function sp(c){var l=["6 hrs","12 hrs","24 hrs"];for(var k=0;k<3;k++)if(c[4+k])return [c[4+k],l[k]];return [0,""]}
+var pages=["home","cars","book","taxi","wed","tours","offers","reviews","contact"];
+function card(i){var c=C[i];return '<div class="card"><div class="pic" style="background:'+c[8]+'">'+pic(c)+(c[6]>=5000?'<span class="vipt">VIP</span>':'')+(hr(c)==best()?'<span class="vipt" style="left:10px;right:auto;background:var(--gr);color:#fff">Best Value</span>':'')+'<span class="tag">'+t(c[2])+' · '+c[3]+'</span></div><div class="pad"><h3>'+nm(c).replace(/ (Petrol|Diesel|Cng|CNG)$/,"")+'</h3><p class="from"><b>'+rs(hr(c))+'</b> <small>/ '+HRL[L]+'</small></p><p class="hrl">'+t("from")+' '+rs(sp(c)[0])+' · '+sp(c)[1]+(c[4]?' ('+MIN[L]+')':'')+'</p><div class="rates">'+rt(c)+'</div><a class="btn y" href="#car-'+i+'">'+t("details")+'</a><a class="btn" href="#book-'+i+'">'+t("reqbook")+'</a></div></div>'}
+function rt(c){return [4,5,6].map(function(j,k){var h=["pk6","pk12","pk24"][k];return '<div>'+t(h).split(" · ")[0]+'<b>'+(c[j]?rs(c[j]):"–")+'</b></div>'}).join("")}
+function info(k){return '<h2>'+t(k+"t")+'</h2><p>'+t(k+"p")+'</p><a class="btn g" target="_blank" rel="noopener" href="'+wa("Hello Sundria Car 4 You, I need "+t(k+"t")+".")+'">'+t("chat")+'</a>'}
+function view(h){
+ h=h||"home";var m;
+ if(h.indexOf("car-")==0){var i=+h.slice(4),c=C[i];if(!c||c[10]==0)return "<h2>"+t("nf")+"</h2>";
+  return '<a href="#cars">← '+t("back")+'</a><div class="card" style="margin-top:10px"><div class="pic" style="background:'+c[8]+';height:200px;font-size:5rem">'+pic(c)+'</div><div class="pad"><h1 style="font-size:2rem">'+nm(c)+'</h1><p>'+t(c[2])+' · '+c[3]+'</p><table><tr><td><b>≈ '+HRL[L]+'</b></td><td><b>'+rs(hr(c))+'</b></td></tr><tr><td>'+t("pk6")+'</td><td>'+(c[4]?rs(c[4]):t("nop"))+'</td></tr><tr><td>'+t("pk12")+'</td><td>'+rs(c[5])+'</td></tr><tr><td>'+t("pk24")+'</td><td>'+rs(c[6])+'</td></tr><tr><td>'+t("extra")+'</td><td>'+rs(c[7])+'</td></tr></table><p class="note">'+t("notice")+' '+HN[L]+'</p><a class="btn" href="#book-'+i+'">'+t("reqbook")+'</a></div></div>'}
+ if(h.indexOf("book")==0){if(h.length>5)sel.car=+h.slice(5);return bookv()}
+ switch(h){
+ case "home":return '<section class="hero"><span class="vip">★ VIP SELF DRIVE · PILANI</span><h1>'+t("h1")+'</h1><p>'+t("hp")+'</p><a class="btn y" href="#cars">'+t("viewcars")+'</a><a class="btn g" target="_blank" rel="noopener" href="'+wa("Hello Sundria Car 4 You, I want to rent a car.")+'">'+t("chat")+'</a></section>'+strip()+gallery()
+  +shop()+'<h2 style="margin-top:26px">'+t("tariff")+'</h2><div class="grid">'+[["pk6","#d71920"],["pk12","#ff7a00"],["pk24","#1a9b52"]].map(function(p){return '<div class="card pad" style="border-top:6px solid '+p[1]+'"><h3>'+t(p[0])+'</h3></div>'}).join("")+'</div><p class="note">'+t("tariffp")+" "+t("notice")+'</p>'
+  +'<h2>'+t("cars")+'</h2><div class="grid">'+[0,1,6,10,13].filter(on).map(card).join("")+'</div><p><a class="btn o" href="#cars">'+t("viewcars")+'</a></p>'
+  +'<h2>'+t("steps")+'</h2><ol class="ul"><li>'+t("s1")+'</li><li>'+t("s2")+'</li><li>'+t("s3")+'</li><li>'+t("s4")+'</li></ol>';
+ case "cars":var f=["all","petrol","cng","diesel"];return '<h2>'+t("cars")+'</h2><div class="chips">'+f.map(function(x){return '<button class="chip'+(x==flt?' on':'')+'" data-f="'+x+'">'+t(x)+'</button>'}).join("")+'</div><p class="note">'+t("notice")+'</p><div class="grid">'+C.map(function(c,i){return (on(i)&&(flt=="all"||c[2]==flt))?card(i):""}).join("")+'</div>';
+ case "taxi":return info("taxi");case "wed":return info("wed");case "tours":return info("tour");
+ case "offers":return '<h2>'+t("offt")+'</h2><p>'+t("offp")+'</p><div class="grid">'+[1,2,3,4].map(function(n){return '<div class="card pad"><h3>'+t("o"+n)+'</h3><p>'+t("o"+n+"d")+'</p></div>'}).join("")+S.offers.map(function(o){return '<div class="card pad" style="border-top:6px solid var(--or)"><h3>'+esc(o.t)+'</h3><p>'+esc(o.d)+'</p></div>'}).join("")+'</div>';
+ case "reviews":return '<h2>'+t("revt")+'</h2><p class="note">'+t("revp")+'</p>';
+ case "contact":return '<h2>'+t("cont")+'</h2>'+shop()+gallery()+qrc()+'<div class="card pad"><p><b>Sundria Car4You Rental</b><br>Self Drive Car Rentals Office<br>'+t("addr")+'<br>Landmark: 50 metres from Triwani Pyau, Ceeri Road</p><a class="btn" href="tel:+919351808902">'+t("call")+' 9351808902</a><a class="btn o" href="tel:+919649961808">'+t("call")+' 9649961808</a><a class="btn g" target="_blank" rel="noopener" href="'+wa("Hello Sundria Car 4 You")+'">WhatsApp</a><p><a href="mailto:sundriacarrentalpilani@gmail.com">sundriacarrentalpilani@gmail.com</a></p><a class="btn y" target="_blank" rel="noopener" href="https://maps.app.goo.gl/GfVSNGcgtBtRU5BN6?g_st=ac">'+t("map")+'</a><p><a target="_blank" rel="noopener" href="https://www.instagram.com/sundria_car4youpilani/">Instagram</a> · <a target="_blank" rel="noopener" href="https://www.youtube.com/@sundriarental">YouTube</a></p></div>';
+ case "privacy":return '<h2>'+t("privacy")+'</h2><p class="note">'+t("pol")+'</p><p>'+t("privb")+'</p>';
+ case "terms":return '<h2>'+t("terms")+'</h2><p class="note">'+t("pol")+'</p><p>'+t("termb")+'</p>';
+ case "cancel":return '<h2>'+t("cancel")+'</h2><p class="note">'+t("pol")+'</p><p>'+t("canb")+'</p>';
+ case "admin":return '<h2>'+t("admint")+'</h2><div id="adm"><p class="note">Loading…</p></div>';
+ }return "<h2>"+t("nf")+"</h2>"}
+function bookv(){var c=C[sel.car]||C[0];
+ return '<h2>'+t("bt")+'</h2><p class="note">'+t("min")+" "+t("notice")+'</p><div class="card pad"><label>'+t("name")+'</label><input id="bn" autocomplete="name"><label>'+t("phone")+'</label><input id="bp" type="tel" inputmode="tel" autocomplete="tel"><div class="cols"><div><label>'+t("car")+'</label><select class="f" id="bc">'+C.map(function(x,i){return !on(i)?"":'<option value="'+i+'"'+(i==sel.car?" selected":"")+'>'+nm(x)+'</option>'}).join("")+'</select></div><div><label>'+t("pkg")+'</label><select class="f" id="bk"></select></div><div><label>'+t("date")+'</label><input id="bd" type="date"></div><div><label>'+t("time")+'</label><input id="bt2" type="time"></div></div><label>'+t("pick")+'</label><input id="bl"><label>'+t("note")+'</label><textarea id="bo" rows="2"></textarea><label style="font-weight:400"><input id="bb" type="checkbox" style="width:auto"> '+t("bits")+'</label><p><b>'+t("est")+': <span id="be"></span></b><br><small>'+t("estn")+'</small></p><p><span class="st">'+t("status")+'</span></p><button class="btn g" id="bs">'+t("send")+'</button></div>'+qrc()}
+function pkopts(){var c=C[+document.getElementById("bc").value],s=document.getElementById("bk"),o="";
+ [[4,"pk6"],[5,"pk12"],[6,"pk24"]].forEach(function(p,k){if(c[p[0]])o+='<option value="'+k+'">'+t(p[1])+' – '+rs(c[p[0]])+'</option>'});
+ s.innerHTML=o;if(sel.pkg!=null&&s.querySelector('[value="'+sel.pkg+'"]'))s.value=sel.pkg;est()}
+function est(){var c=C[+document.getElementById("bc").value],k=+document.getElementById("bk").value;sel.pkg=k;document.getElementById("be").textContent=rs(c[4+k])}
+function route(){var h=location.hash.slice(1)||"home";document.getElementById("app").innerHTML=view(h);
+ var base=h.split("-")[0];
+ document.getElementById("nav").innerHTML=pages.map(function(p){return '<a href="#'+p+'"'+(p==base||(p=="cars"&&h.indexOf("car-")==0)?' class="on"':"")+'><span>'+IC[p]+'</span>'+t(p)+'</a>'}).join("");
+ if(base=="book"){var bc=document.getElementById("bc");bc.onchange=function(){sel.car=+bc.value;pkopts()};document.getElementById("bk").onchange=est;pkopts();
+  document.getElementById("bs").onclick=function(){var n=bn.value.trim(),p=bp.value.trim();if(!n||!p||!bd.value){alert(t("name")+", "+t("phone")+", "+t("date"));return}
+   var c=C[+bc.value],k=+bk.value,m="BOOKING ENQUIRY\nName: "+n+"\nPhone: "+p+"\nCar: "+nm(c)+"\nPackage: "+t(["pk6","pk12","pk24"][k])+" ("+rs(c[4+k])+")\nPickup: "+bd.value+" "+bt2.value+"\nPlace: "+bl.value+"\nBITS student: "+(bb.checked?"Yes":"No")+"\nNotes: "+bo.value+"\n(Enquiry only. Not confirmed.)";
+   window.open(wa(m),"_blank")}}
+ document.querySelectorAll("[data-f]").forEach(function(b){b.onclick=function(){flt=b.dataset.f;route()}});
+ var lg=document.querySelector(".logo");if(S.logo&&!lg.querySelector("img"))lg.insertAdjacentHTML("afterbegin",'<img src="/_blob/'+S.logo+'" alt="Sundria Car4You logo" style="height:40px;width:40px;object-fit:cover;border-radius:50%;vertical-align:middle;margin-right:8px;border:1px solid var(--gd)">');
+ if(base=="admin")initAdmin();document.getElementById("foot").innerHTML='<p><b>Sundria Car4You Rental</b><br>Self Drive Car Rentals Office<br>'+t("addr")+'<br>+91 9351808902 · +91 9649961808</p><a href="#privacy">'+t("privacy")+'</a><a href="#terms">'+t("terms")+'</a><a href="#cancel">'+t("cancel")+'</a><a href="#admin">'+t("admin")+'</a>';
+ document.getElementById("wafab").href=wa("Hello Sundria Car 4 You");
+ document.documentElement.lang=L=="hi"?"hi":"en";window.scrollTo(0,0)}
+document.getElementById("lang").value=L;
+document.getElementById("lang").onchange=function(e){L=e.target.value;try{localStorage.setItem("lang",L)}catch(x){}route()};
+document.getElementById("theme").onclick=function(){var r=document.documentElement,d=r.dataset.theme?r.dataset.theme=="dark":matchMedia("(prefers-color-scheme:dark)").matches;r.dataset.theme=d?"light":"dark";try{localStorage.setItem("theme",r.dataset.theme)}catch(x){}};
+try{var th=localStorage.getItem("theme");if(th)document.documentElement.dataset.theme=th;var sl=localStorage.getItem("lang");if(sl){L=sl;document.getElementById("lang").value=L}}catch(x){}
+async function initAdmin(){
+ var box=document.getElementById("adm"),u,as,ar;
+ try{var cl=window.claude;u=cl&&await cl.use("user");as=cl&&await cl.use("assets");ar=cl&&await cl.use("artifact")}catch(e){}
+ if(!u||!as||!ar||!u.canEdit()){box.innerHTML='<p class="note"><span class="st">Locked</span>Only the owner or an editor signed in to claude.ai can open this panel. Access is controlled by the platform. A password written inside a web page would be visible to everyone, so none is used here.</p>';return}
+ var W=JSON.parse(JSON.stringify({cars:C,offers:S.offers,qr:S.qr,shop:S.shop,logo:S.logo||"",gal:(S.gal||["","","",""]).slice()}));
+ function img(id,w){return id?'<img src="/_blob/'+id+'" alt="" style="max-width:'+w+'px;max-height:150px;border-radius:8px;display:block;margin:6px 0">':""}
+ function shrink(f){return new Promise(function(ok){var im=new Image(),url=URL.createObjectURL(f);im.onload=function(){var k=Math.min(1,1200/Math.max(im.width,im.height)),c=document.createElement("canvas");c.width=im.width*k;c.height=im.height*k;c.getContext("2d").drawImage(im,0,0,c.width,c.height);c.toBlob(ok,"image/jpeg",.82)};im.onerror=function(){ok(f)};im.src=url})}
+ function draw(){
+  var h='<p class="note">Edit, then press Save &amp; publish. Customers see changes only after saving. Razorpay is not connected; the QR is for manual UPI payment.</p>';
+  h+='<div class="card pad" style="margin-bottom:12px"><h3>Logo</h3>'+img(W.logo,120)+'<input type="file" accept="image/*" data-u="logo"></div><div class="card pad"><h3>Shop photo</h3>'+img(W.shop,320)+'<input type="file" accept="image/*" data-u="shop"></div>';
+  h+='<div class="card pad" style="margin-top:12px"><h3>Payment QR</h3>'+img(W.qr,200)+'<input type="file" accept="image/*" data-u="qr"></div><div class="card pad" style="margin-top:12px"><h3>Office photos</h3><div class="cols">'+GC.en.map(function(n,i){return '<div><label>'+n+'</label>'+img(W.gal[i],200)+'<input type="file" accept="image/*" data-u="gal'+i+'"></div>'}).join("")+'</div></div><h3 style="margin-top:18px">Cars</h3>';
+  W.cars.forEach(function(c,i){
+   h+='<div class="card pad" style="margin-bottom:10px"><div class="cols"><div><label>Name</label><input data-c="'+i+'.0" value="'+esc(c[0])+'"></div><div><label>Colour</label><input data-c="'+i+'.1" value="'+esc(c[1])+'"></div><div><label>Fuel</label><select class="f" data-c="'+i+'.2">'+["petrol","cng","diesel"].map(function(x){return '<option'+(x==c[2]?" selected":"")+'>'+x+'</option>'}).join("")+'</select></div><div><label>Type</label><input data-c="'+i+'.3" value="'+esc(c[3])+'"></div>'
+   +[[4,"6 hr ₹ (0 = not offered)"],[5,"12 hr ₹"],[6,"24 hr ₹"],[7,"Extra hour ₹"]].map(function(f){return '<div><label>'+f[1]+'</label><input type="number" min="0" data-c="'+i+'.'+f[0]+'" value="'+c[f[0]]+'"></div>'}).join("")
+   +'</div><label>Car photo</label>'+img(c[9],220)+'<input type="file" accept="image/*" data-u="car'+i+'"><label style="font-weight:400"><input type="checkbox" style="width:auto" data-a="'+i+'"'+(c[10]!=0?" checked":"")+'> Active (shown to customers)</label></div>'});
+  h+='<button class="btn o" id="addc">+ Add car</button><h3 style="margin-top:18px">Offers</h3>';
+  W.offers.forEach(function(o,i){h+='<div class="card pad" style="margin-bottom:8px"><b>'+esc(o.t)+'</b><br>'+esc(o.d)+'<br><button class="btn" data-d="'+i+'">Delete</button></div>'});
+  h+='<div class="card pad"><label>New offer title</label><input id="ot"><label>Details</label><input id="od"><button class="btn y" id="addo">Add offer</button></div><p><button class="btn g" id="saveb">Save &amp; publish</button></p>';
+  box.innerHTML=h;
+  box.querySelectorAll("[data-c]").forEach(function(e){e.onchange=function(){var p=e.dataset.c.split(".");W.cars[p[0]][p[1]]=(p[1]>=4&&p[1]<=7)?(+e.value||0):e.value}});
+  box.querySelectorAll("[data-a]").forEach(function(e){e.onchange=function(){W.cars[e.dataset.a][10]=e.checked?1:0}});
+  box.querySelectorAll("[data-d]").forEach(function(e){e.onclick=function(){W.offers.splice(+e.dataset.d,1);draw()}});
+  box.querySelectorAll("[data-u]").forEach(function(e){e.onchange=async function(){var f=e.files[0];if(!f)return;try{var k=e.dataset.u,b=k=="qr"?f:await shrink(f),r=await as.upload(b);if(k=="logo")W.logo=r.id;else if(k=="shop")W.shop=r.id;else if(k=="qr")W.qr=r.id;else if(k.slice(0,3)=="gal")W.gal[+k.slice(3)]=r.id;else W.cars[+k.slice(3)][9]=r.id;draw()}catch(x){alert("Upload failed: "+(x.message||x.code||x))}}});
+  document.getElementById("addc").onclick=function(){W.cars.push(["New car","White","petrol","Hatchback",0,0,0,0,"#e9e6e1","",1]);draw()};
+  document.getElementById("addo").onclick=function(){var a=ot.value.trim();if(!a)return;W.offers.push({t:a,d:od.value.trim()});draw()};
+  document.getElementById("saveb").onclick=async function(){var b=this;try{b.disabled=true;var d=document.documentElement.cloneNode(true);["app","nav","foot"].forEach(function(i){d.querySelector("#"+i).innerHTML=""});var li=d.querySelector(".logo img");if(li)li.remove();d.querySelector("#st").textContent=JSON.stringify(W).replace(/</g,"\\u003c");d.removeAttribute("data-theme");d.setAttribute("lang","en");await ar.publish("<!DOCTYPE html>\n"+d.outerHTML)}catch(x){alert("Save failed: "+(x.message||x.code||x));b.disabled=false}}
+ }
+ draw()}
+window.addEventListener("hashchange",route);route();
+</script>
+</body>
+</html>
